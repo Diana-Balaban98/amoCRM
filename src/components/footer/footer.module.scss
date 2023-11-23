@@ -1,0 +1,31 @@
+.footerContainer {
+  display: flex;
+
+  .leftBlock {
+    flex: 1;
+  }
+}
+
+.blockInfo {
+  .title {
+    margin: 0 0 20px 0;
+    color: var(--color-dark-500);
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+  }
+  .blockList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li a {
+      text-decoration: none;
+      color: var(--color-light-300);
+    }
+
+    li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}

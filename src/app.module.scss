@@ -1,0 +1,48 @@
+body::after {
+  content: "";
+  position: absolute;
+  border-radius: 311px;
+  opacity: 0.5;
+  background: #961a1a;
+  width: 311px;
+  height: 311px;
+
+  filter: blur(196px);
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.8s ease 0s;
+  -o-transition: opacity 0.8s ease 0s;
+  transition: opacity 0.8s ease 0s;
+  pointer-events: none;
+  z-index: 149;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 259px;
+  height: 259px;
+  border-radius: 259px;
+  opacity: 0.5;
+  background: #833ab4;
+  filter: blur(196px);
+}
+
+.purpleBall {
+  position: absolute;
+  right: 35%;
+  top: 0;
+  filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+  backdrop-filter: blur(2px);
+  transition: all 2s ease-in-out;
+  z-index: -1;
+}
+
+.sectionApp {
+  display: flex;
+  justify-content: space-between;
+  padding: 95px 0 69px 0;
+}

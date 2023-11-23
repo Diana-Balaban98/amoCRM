@@ -1,0 +1,27 @@
+.blockTitle {
+  max-width: 380px;
+  color: var(--color-light-300);
+
+  .titleApp {
+    margin: 0;
+    font-size: var(--font-size-xxl);
+    margin-bottom: 30px;
+    font-weight: var(--font-weight-regular);
+    span {
+      background: unset;
+      background: linear-gradient(90deg, #fcb045, #ff3f78);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      color: var(--color-light-300);
+      font-weight: var(--font-weight-black);
+    }
+  }
+
+  .titleInfo {
+    max-width: 275px;
+    font-family: Montserrat, sans-serif;
+    font-size: var(--font-size-l);
+  }
+}

@@ -1,0 +1,43 @@
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 330px;
+  text-align: end;
+
+  .title {
+    margin: 0 0 40px 0;
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-medium);
+
+    span {
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #fd1d1d, #fcb045);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: var(--font-weight-bold);
+    }
+  }
+
+  .infoColumns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 61px;
+
+    .leftColumns {
+      grid-column: 1 / span 1;
+      div:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    .rightColumns {
+      grid-column: 2 / span 1;
+      div:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

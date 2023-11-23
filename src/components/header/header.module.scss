@@ -1,0 +1,50 @@
+.header {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 259px;
+    opacity: 0.5;
+    background: #833ab4;
+
+    filter: blur(196px);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .headerBody {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+
+    .headerInner {
+      display: flex;
+      position: relative;
+      gap: 52px;
+
+      .logoBlock {
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        max-width: 133px;
+        color: #e4e5ea;
+
+        & > svg {
+          margin-bottom: 14px;
+        }
+      }
+
+      .redBall {
+        position: absolute;
+        right: 215px;
+        top: 20px;
+        filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+        backdrop-filter: blur(2px);
+        transition: all 2s ease-in-out;
+        z-index: -1;
+      }
+    }
+  }
+}

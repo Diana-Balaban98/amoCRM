@@ -1,0 +1,11 @@
+.navbarItem {
+  display: block;
+  color: var(--color-light-300);
+  font-weight: var(--font-weight-medium);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
