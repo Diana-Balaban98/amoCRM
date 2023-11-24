@@ -1,10 +1,12 @@
 import PurpleBall from "@/assets/icons/purpleBall";
-import { Container } from "@/components/container/container";
-import { Footer } from "@/components/footer/footer";
-import { Header } from "@/components/header/header";
-import { InfoBlock } from "@/components/infoBlock/infoBlock";
-import { Section } from "@/components/section";
-import { Title } from "@/components/title";
+import {
+  Container,
+  Footer,
+  Header,
+  InfoBlock,
+  Section,
+  Title,
+} from "@/components";
 
 import s from "./app.module.scss";
 
