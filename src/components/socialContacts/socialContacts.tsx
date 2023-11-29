@@ -11,19 +11,19 @@ type SocialContactsProps = {
 export const SocialContacts: FunctionComponent<SocialContactsProps> = ({
   className,
 }) => {
+  const socialArr = [
+    { icon: <Telegram /> },
+    { icon: <Viber /> },
+    { icon: <Whatsapp /> },
+  ];
+
   return (
     <div className={`${s.socialContacts} ${className}`}>
       <span>+7 555 555-55-55</span>
       <div className={s.socialIcons}>
-        <span>
-          <Telegram />
-        </span>
-        <span>
-          <Viber />
-        </span>
-        <span>
-          <Whatsapp />
-        </span>
+        {socialArr.map((s, i) => (
+          <span key={i}>{s.icon}</span>
+        ))}
       </div>
     </div>
   );
